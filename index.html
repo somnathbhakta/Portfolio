@@ -319,6 +319,9 @@ footer{border-top:1px solid var(--line);padding:24px 5vw 62px;display:flex;
   border:1px solid var(--line);background:rgba(26,15,48,.5);padding:13px 32px;border-radius:999px;
   cursor:pointer;transition:all .3s;text-transform:uppercase}
 .view-more-btn:hover{border-color:var(--orchid);transform:translateY(-3px);box-shadow:0 8px 22px rgba(124,58,237,.3)}
+
+.scene.has-thumb{background-size:cover;background-position:center;background-repeat:no-repeat}
+.scene.has-thumb .shape{display:none}
 </style>
 </head>
 <body>
@@ -1115,6 +1118,20 @@ viewMoreBtn?.addEventListener('click', () => {
 });
 
 applyViewMore();
+
+/* ---------- real YouTube thumbnails ---------- */
+document.querySelectorAll('[data-video]').forEach(el => {
+  const id = el.dataset.video;
+  if (!id) return;
+  el.querySelectorAll('.scene').forEach(scene => {
+    const img = new Image();
+    img.onload = () => {
+      scene.style.backgroundImage = `url(https://img.youtube.com/vi/${id}/hqdefault.jpg)`;
+      scene.classList.add('has-thumb');
+    };
+    img.src = `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+  });
+});
 </script>
 </body>
 </html>
