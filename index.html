@@ -312,6 +312,13 @@ footer{border-top:1px solid var(--line);padding:24px 5vw 62px;display:flex;
   .reveal{opacity:1;transform:none}
   html{scroll-behavior:auto}
 }
+
+.card.extra-hidden{display:none}
+.view-more-wrap{display:flex;justify-content:center;margin-top:36px}
+.view-more-btn{font-family:'JetBrains Mono';font-size:13px;letter-spacing:.1em;color:var(--text);
+  border:1px solid var(--line);background:rgba(26,15,48,.5);padding:13px 32px;border-radius:999px;
+  cursor:pointer;transition:all .3s;text-transform:uppercase}
+.view-more-btn:hover{border-color:var(--orchid);transform:translateY(-3px);box-shadow:0 8px 22px rgba(124,58,237,.3)}
 </style>
 </head>
 <body>
@@ -357,7 +364,7 @@ footer{border-top:1px solid var(--line);padding:24px 5vw 62px;display:flex;
     <h2 class="reveal">60 seconds of<br>my best frames</h2>
     <p class="reveal">Everything I do, cut into one minute. Best watched with sound on.</p>
   </div>
-  <div class="reel-frame reveal" data-video="irVNGjRFZGk" role="button" tabindex="0" aria-label="Play showreel">
+  <div class="reel-frame reveal" data-video="62PNxn2Idvo" role="button" tabindex="0" aria-label="Play showreel">
     <div class="scene"></div>
     <div class="overlay">
       <div class="play-ring">PLAY</div>
@@ -367,7 +374,6 @@ footer{border-top:1px solid var(--line);padding:24px 5vw 62px;display:flex;
   <p class="reel-note">To change any video, edit its data-video="..." attribute with the YouTube video ID.</p>
 </section>
 
-<!-- ================= WORK ================= -->
 <section id="work">
   <div class="eyebrow">KF 02 — Selected Work</div>
   <div class="section-head">
@@ -376,73 +382,324 @@ footer{border-top:1px solid var(--line);padding:24px 5vw 62px;display:flex;
   </div>
   <div class="filters reveal" role="tablist" aria-label="Project categories">
     <button class="filter active" data-filter="all">All</button>
-    <button class="filter" data-filter="saas">SaaS &amp; Product</button>
-    <button class="filter" data-filter="marketing">Marketing</button>
-    <button class="filter" data-filter="brand">Brand</button>
-    <button class="filter" data-filter="reels">Reels &amp; Short-Form</button>
-    <button class="filter" data-filter="ui">UI Animation</button>
+    <button class="filter" data-filter="marketing">Marketing Videos</button>
+    <button class="filter" data-filter="product-explainer">Product Explainer Videos</button>
+    <button class="filter" data-filter="corporate">Corporate Video Production</button>
+    <button class="filter" data-filter="short">Short Videos</button>
+    <button class="filter" data-filter="saas">SaaS Videos</button>
+    <button class="filter" data-filter="pitch">Pitch Videos</button>
+    <button class="filter" data-filter="ai">AI Videos</button>
   </div>
   <div class="work-grid" id="workGrid">
-    <article class="card reveal" data-cat="saas">
-      <div class="thumb" data-video="irVNGjRFZGk"><div class="scene sc-1"><div class="shape sh-line"></div></div>
+    <article class="card reveal" data-cat="marketing">
+      <div class="thumb" data-video="XWKP9EmLDdw"><div class="scene sc-1"><div class="shape sh-line"></div></div>
         <div class="play"><div class="play-ring">PLAY</div></div></div>
-      <div class="meta"><h3>Product Launch Explainer</h3><span class="mono">00:01:24</span></div>
-      <div class="cat">SaaS &amp; Product</div>
-    </article>
-    <article class="card reveal" data-cat="saas">
-      <div class="thumb" data-video="irVNGjRFZGk"><div class="scene sc-6"><div class="shape sh-dot"></div></div>
-        <div class="play"><div class="play-ring">PLAY</div></div></div>
-      <div class="meta"><h3>Feature Walkthrough Video</h3><span class="mono">00:00:52</span></div>
-      <div class="cat">SaaS &amp; Product</div>
+      <div class="meta"><h3>McD Case Study Video</h3></div>
+      <div class="cat">Marketing Videos</div>
     </article>
     <article class="card reveal" data-cat="marketing">
-      <div class="thumb" data-video="irVNGjRFZGk"><div class="scene sc-3"><div class="shape sh-orbit"></div></div>
+      <div class="thumb" data-video="vFN6RuR1hts"><div class="scene sc-2"><div class="shape sh-dot"></div></div>
         <div class="play"><div class="play-ring">PLAY</div></div></div>
-      <div class="meta"><h3>Campaign Promo Video</h3><span class="mono">00:00:30</span></div>
-      <div class="cat">Marketing</div>
+      <div class="meta"><h3>Push Notification</h3></div>
+      <div class="cat">Marketing Videos</div>
     </article>
-    <article class="card reveal" data-cat="brand">
-      <div class="thumb" data-video="irVNGjRFZGk"><div class="scene sc-2"><div class="shape sh-spin"></div></div>
+    <article class="card reveal" data-cat="marketing">
+      <div class="thumb" data-video="62PNxn2Idvo"><div class="scene sc-3"><div class="shape sh-orbit"></div></div>
         <div class="play"><div class="play-ring">PLAY</div></div></div>
-      <div class="meta"><h3>Logo Reveal &amp; Brand Ident</h3><span class="mono">00:00:12</span></div>
-      <div class="cat">Brand</div>
+      <div class="meta"><h3>No Guesswork</h3></div>
+      <div class="cat">Marketing Videos</div>
     </article>
-    <article class="card reveal vertical" data-cat="reels">
-      <div class="thumb" data-video="irVNGjRFZGk">
-        <div class="scene sc-5 bgblur"></div>
-        <div class="frame"><div class="scene sc-5"><div class="shape sh-dot"></div></div></div>
-        <div class="play"><div class="play-ring">PLAY</div></div>
-      </div>
-      <div class="meta"><h3>Instagram Reel — Product Teaser</h3><span class="mono">00:00:15</span></div>
-      <div class="cat">Reels &amp; Short-Form</div>
-    </article>
-    <article class="card reveal vertical" data-cat="reels">
-      <div class="thumb" data-video="irVNGjRFZGk">
-        <div class="scene sc-4 bgblur"></div>
-        <div class="frame"><div class="scene sc-4"><div class="shape sh-square"></div></div></div>
-        <div class="play"><div class="play-ring">PLAY</div></div>
-      </div>
-      <div class="meta"><h3>YouTube Short — Motion Typography</h3><span class="mono">00:00:20</span></div>
-      <div class="cat">Reels &amp; Short-Form</div>
-    </article>
-    <article class="card reveal" data-cat="ui">
-      <div class="thumb" data-video="irVNGjRFZGk"><div class="scene sc-6"><div class="shape sh-square"></div></div>
+    <article class="card reveal" data-cat="marketing">
+      <div class="thumb" data-video="XWKP9EmLDdw"><div class="scene sc-4"><div class="shape sh-spin"></div></div>
         <div class="play"><div class="play-ring">PLAY</div></div></div>
-      <div class="meta"><h3>App Onboarding Animation</h3><span class="mono">00:00:18</span></div>
-      <div class="cat">UI Animation</div>
+      <div class="meta"><h3>McD Case Study Video</h3></div>
+      <div class="cat">Marketing Videos</div>
     </article>
-    <article class="card reveal" data-cat="ui">
-      <div class="thumb" data-video="irVNGjRFZGk"><div class="scene sc-1"><div class="shape sh-spin"></div></div>
+    <article class="card reveal" data-cat="marketing">
+      <div class="thumb" data-video="N87_JmTAPMc"><div class="scene sc-5"><div class="shape sh-square"></div></div>
         <div class="play"><div class="play-ring">PLAY</div></div></div>
-      <div class="meta"><h3>Micro-interactions Pack</h3><span class="mono">00:00:26</span></div>
-      <div class="cat">UI Animation</div>
+      <div class="meta"><h3>Bank Jago x VEVE | Award-Winning Video</h3></div>
+      <div class="cat">Marketing Videos</div>
     </article>
-    <article class="card reveal" data-cat="brand">
-      <div class="thumb" data-video="irVNGjRFZGk"><div class="scene sc-5"><div class="shape sh-orbit"></div></div>
+    <article class="card reveal" data-cat="marketing">
+      <div class="thumb" data-video="9exwALYsWOY"><div class="scene sc-6"><div class="shape sh-line"></div></div>
         <div class="play"><div class="play-ring">PLAY</div></div></div>
-      <div class="meta"><h3>Brand Story Film</h3><span class="mono">00:01:45</span></div>
-      <div class="cat">Brand</div>
+      <div class="meta"><h3>Unify with Konnect video</h3></div>
+      <div class="cat">Marketing Videos</div>
     </article>
+    <article class="card reveal" data-cat="marketing">
+      <div class="thumb" data-video="qDx_Q89CisE"><div class="scene sc-1"><div class="shape sh-dot"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Grab Indonesia's Super App</h3></div>
+      <div class="cat">Marketing Videos</div>
+    </article>
+    <article class="card reveal" data-cat="marketing">
+      <div class="thumb" data-video="TsuL25LvuZM"><div class="scene sc-2"><div class="shape sh-orbit"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>KRC Promotional Video</h3></div>
+      <div class="cat">Marketing Videos</div>
+    </article>
+    <article class="card reveal" data-cat="marketing">
+      <div class="thumb" data-video="sFGK-ffmnqQ"><div class="scene sc-3"><div class="shape sh-spin"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Blibli Indonesia</h3></div>
+      <div class="cat">Marketing Videos</div>
+    </article>
+    <article class="card reveal" data-cat="marketing">
+      <div class="thumb" data-video="wGhOYumJFuI"><div class="scene sc-4"><div class="shape sh-square"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Nucleuslinks Podcast</h3></div>
+      <div class="cat">Marketing Videos</div>
+    </article>
+    <article class="card reveal" data-cat="marketing">
+      <div class="thumb" data-video="nZioUnXcRjQ"><div class="scene sc-5"><div class="shape sh-line"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Nucleus links AI-powered Revenue Accelerator</h3></div>
+      <div class="cat">Marketing Videos</div>
+    </article>
+    <article class="card reveal" data-cat="marketing">
+      <div class="thumb" data-video="Z517l5r0fu0"><div class="scene sc-6"><div class="shape sh-dot"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Garnier Case Study: Strategy, Impact &amp; Results</h3></div>
+      <div class="cat">Marketing Videos</div>
+    </article>
+    <article class="card reveal" data-cat="marketing">
+      <div class="thumb" data-video="kTNH4LCsa2E"><div class="scene sc-1"><div class="shape sh-orbit"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Crompton Case Study Video</h3></div>
+      <div class="cat">Marketing Videos</div>
+    </article>
+    <article class="card reveal" data-cat="marketing">
+      <div class="thumb" data-video="v1Fddl34YdQ"><div class="scene sc-2"><div class="shape sh-spin"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Understand your Audience</h3></div>
+      <div class="cat">Marketing Videos</div>
+    </article>
+    <article class="card reveal" data-cat="marketing">
+      <div class="thumb" data-video="JLBFt0ZIYac"><div class="scene sc-3"><div class="shape sh-square"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>LG India Interactive Mobile Ad</h3></div>
+      <div class="cat">Marketing Videos</div>
+    </article>
+    <article class="card reveal" data-cat="marketing">
+      <div class="thumb" data-video="doynNhNwFsM"><div class="scene sc-4"><div class="shape sh-line"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>eTiQa Case Study Video</h3></div>
+      <div class="cat">Marketing Videos</div>
+    </article>
+    <article class="card reveal" data-cat="product-explainer">
+      <div class="thumb" data-video="XWKP9EmLDdw"><div class="scene sc-5"><div class="shape sh-dot"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Konnect AI+</h3></div>
+      <div class="cat">Product Explainer Videos</div>
+    </article>
+    <article class="card reveal" data-cat="product-explainer">
+      <div class="thumb" data-video="qBRv3cIgx50"><div class="scene sc-6"><div class="shape sh-orbit"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Engage app</h3></div>
+      <div class="cat">Product Explainer Videos</div>
+    </article>
+    <article class="card reveal" data-cat="product-explainer">
+      <div class="thumb" data-video="62PNxn2Idvo"><div class="scene sc-1"><div class="shape sh-spin"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>AI Essentials</h3></div>
+      <div class="cat">Product Explainer Videos</div>
+    </article>
+    <article class="card reveal" data-cat="product-explainer">
+      <div class="thumb" data-video="XWKP9EmLDdw"><div class="scene sc-2"><div class="shape sh-square"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Konnect Research Cloud</h3></div>
+      <div class="cat">Product Explainer Videos</div>
+    </article>
+    <article class="card reveal" data-cat="product-explainer">
+      <div class="thumb" data-video="N87_JmTAPMc"><div class="scene sc-3"><div class="shape sh-line"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Header Bidding Journey by Yield Solutions</h3></div>
+      <div class="cat">Product Explainer Videos</div>
+    </article>
+    <article class="card reveal" data-cat="product-explainer">
+      <div class="thumb" data-video="9exwALYsWOY"><div class="scene sc-4"><div class="shape sh-dot"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Agent Empower</h3></div>
+      <div class="cat">Product Explainer Videos</div>
+    </article>
+    <article class="card reveal" data-cat="product-explainer">
+      <div class="thumb" data-video="qDx_Q89CisE"><div class="scene sc-5"><div class="shape sh-orbit"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Omnichannel Ticketing</h3></div>
+      <div class="cat">Product Explainer Videos</div>
+    </article>
+    <article class="card reveal" data-cat="product-explainer">
+      <div class="thumb" data-video="TsuL25LvuZM"><div class="scene sc-6"><div class="shape sh-spin"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>KRC WFM Video</h3></div>
+      <div class="cat">Product Explainer Videos</div>
+    </article>
+    <article class="card reveal" data-cat="product-explainer">
+      <div class="thumb" data-video="sFGK-ffmnqQ"><div class="scene sc-1"><div class="shape sh-square"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>KRC Promotional Video</h3></div>
+      <div class="cat">Product Explainer Videos</div>
+    </article>
+    <article class="card reveal" data-cat="product-explainer">
+      <div class="thumb" data-video="wGhOYumJFuI"><div class="scene sc-2"><div class="shape sh-line"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Konnect DSR</h3></div>
+      <div class="cat">Product Explainer Videos</div>
+    </article>
+    <article class="card reveal" data-cat="product-explainer">
+      <div class="thumb" data-video="nZioUnXcRjQ"><div class="scene sc-3"><div class="shape sh-dot"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Behind Every Ticket</h3></div>
+      <div class="cat">Product Explainer Videos</div>
+    </article>
+    <article class="card reveal" data-cat="corporate">
+      <div class="thumb" data-video="XWKP9EmLDdw"><div class="scene sc-4"><div class="shape sh-orbit"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Talking Head Video 1</h3></div>
+      <div class="cat">Corporate Video Production</div>
+    </article>
+    <article class="card reveal" data-cat="corporate">
+      <div class="thumb" data-video="qBRv3cIgx50"><div class="scene sc-5"><div class="shape sh-spin"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Talking Head Video 2</h3></div>
+      <div class="cat">Corporate Video Production</div>
+    </article>
+    <article class="card reveal" data-cat="corporate">
+      <div class="thumb" data-video="62PNxn2Idvo"><div class="scene sc-6"><div class="shape sh-square"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Talking Head Video 3</h3></div>
+      <div class="cat">Corporate Video Production</div>
+    </article>
+    <article class="card reveal" data-cat="corporate">
+      <div class="thumb" data-video="XWKP9EmLDdw"><div class="scene sc-1"><div class="shape sh-line"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Talking Head Video 4</h3></div>
+      <div class="cat">Corporate Video Production</div>
+    </article>
+    <article class="card reveal" data-cat="corporate">
+      <div class="thumb" data-video="N87_JmTAPMc"><div class="scene sc-2"><div class="shape sh-dot"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Talking Head Video 5</h3></div>
+      <div class="cat">Corporate Video Production</div>
+    </article>
+    <article class="card reveal" data-cat="corporate">
+      <div class="thumb" data-video="9exwALYsWOY"><div class="scene sc-3"><div class="shape sh-orbit"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Talking Head Video 6</h3></div>
+      <div class="cat">Corporate Video Production</div>
+    </article>
+    <article class="card reveal" data-cat="corporate">
+      <div class="thumb" data-video="qDx_Q89CisE"><div class="scene sc-4"><div class="shape sh-spin"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Talking Head Video 7</h3></div>
+      <div class="cat">Corporate Video Production</div>
+    </article>
+    <article class="card reveal" data-cat="corporate">
+      <div class="thumb" data-video="TsuL25LvuZM"><div class="scene sc-5"><div class="shape sh-square"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Corporate Event Meet Video</h3></div>
+      <div class="cat">Corporate Video Production</div>
+    </article>
+    <article class="card reveal" data-cat="short">
+      <div class="thumb" data-video="XWKP9EmLDdw"><div class="scene sc-6"><div class="shape sh-line"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>CEO Video Shoot + Edits</h3></div>
+      <div class="cat">Short Videos</div>
+    </article>
+    <article class="card reveal" data-cat="short">
+      <div class="thumb" data-video="qBRv3cIgx50"><div class="scene sc-1"><div class="shape sh-dot"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>TSC</h3></div>
+      <div class="cat">Short Videos</div>
+    </article>
+    <article class="card reveal" data-cat="short">
+      <div class="thumb" data-video="62PNxn2Idvo"><div class="scene sc-2"><div class="shape sh-orbit"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Happy Birthday to the Legend Behind KFC!</h3></div>
+      <div class="cat">Short Videos</div>
+    </article>
+    <article class="card reveal" data-cat="short">
+      <div class="thumb" data-video="XWKP9EmLDdw"><div class="scene sc-3"><div class="shape sh-spin"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>PCOS</h3></div>
+      <div class="cat">Short Videos</div>
+    </article>
+    <article class="card reveal" data-cat="short">
+      <div class="thumb" data-video="N87_JmTAPMc"><div class="scene sc-4"><div class="shape sh-square"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Introducing Network+ by NucleusLinks</h3></div>
+      <div class="cat">Short Videos</div>
+    </article>
+    <article class="card reveal" data-cat="short">
+      <div class="thumb" data-video="62PNxn2Idvo"><div class="scene sc-5"><div class="shape sh-line"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Talking Head Video 3</h3></div>
+      <div class="cat">Short Videos</div>
+    </article>
+    <article class="card reveal" data-cat="short">
+      <div class="thumb" data-video="XWKP9EmLDdw"><div class="scene sc-6"><div class="shape sh-dot"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Talking Head Video 4</h3></div>
+      <div class="cat">Short Videos</div>
+    </article>
+    <article class="card reveal" data-cat="short">
+      <div class="thumb" data-video="N87_JmTAPMc"><div class="scene sc-1"><div class="shape sh-orbit"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Talking Head Video 5</h3></div>
+      <div class="cat">Short Videos</div>
+    </article>
+    <article class="card reveal" data-cat="saas">
+      <div class="thumb" data-video="XWKP9EmLDdw"><div class="scene sc-2"><div class="shape sh-spin"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Data Meets Clarity: Analytics Explainer Video</h3></div>
+      <div class="cat">SaaS Videos</div>
+    </article>
+    <article class="card reveal" data-cat="saas">
+      <div class="thumb" data-video="qBRv3cIgx50"><div class="scene sc-3"><div class="shape sh-square"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Analytics Video</h3></div>
+      <div class="cat">SaaS Videos</div>
+    </article>
+    <article class="card reveal" data-cat="saas">
+      <div class="thumb" data-video="62PNxn2Idvo"><div class="scene sc-4"><div class="shape sh-line"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Language - Konnect AI+</h3></div>
+      <div class="cat">SaaS Videos</div>
+    </article>
+    <article class="card reveal" data-cat="saas">
+      <div class="thumb" data-video="XWKP9EmLDdw"><div class="scene sc-5"><div class="shape sh-dot"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Affiliate Huddle Video</h3></div>
+      <div class="cat">SaaS Videos</div>
+    </article>
+    <article class="card reveal" data-cat="pitch">
+      <div class="thumb" data-video="N87_JmTAPMc"><div class="scene sc-6"><div class="shape sh-orbit"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Deck Video</h3></div>
+      <div class="cat">Pitch Videos</div>
+    </article>
+    <article class="card reveal" data-cat="pitch">
+      <div class="thumb" data-video="62PNxn2Idvo"><div class="scene sc-1"><div class="shape sh-spin"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>VEVE Germany Roadshow Showreel</h3></div>
+      <div class="cat">Pitch Videos</div>
+    </article>
+    <article class="card reveal" data-cat="ai">
+      <div class="thumb" data-video="XWKP9EmLDdw"><div class="scene sc-2"><div class="shape sh-square"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Konnect AI+ | Brand Story Video</h3></div>
+      <div class="cat">AI Videos</div>
+    </article>
+    <article class="card reveal" data-cat="ai">
+      <div class="thumb" data-video="N87_JmTAPMc"><div class="scene sc-3"><div class="shape sh-line"></div></div>
+        <div class="play"><div class="play-ring">PLAY</div></div></div>
+      <div class="meta"><h3>Konnect AI+ Use Cases</h3></div>
+      <div class="cat">AI Videos</div>
+    </article>
+  </div>
+  <div class="view-more-wrap" id="viewMoreWrap">
+    <button class="view-more-btn" id="viewMoreBtn">View More</button>
   </div>
 </section>
 
@@ -455,7 +712,7 @@ footer{border-top:1px solid var(--line);padding:24px 5vw 62px;display:flex;
   </div>
   <div class="cases">
     <article class="case reveal">
-      <div class="visual" data-video="irVNGjRFZGk"><div class="scene sc-3"><div class="shape sh-orbit"></div><div class="shape sh-dot"></div></div>
+      <div class="visual" data-video="XWKP9EmLDdw"><div class="scene sc-3"><div class="shape sh-orbit"></div><div class="shape sh-dot"></div></div>
         <div class="play"><div class="play-ring">PLAY</div></div></div>
       <div class="body">
         <span class="mono">Case Study 01 · SaaS Product Video</span>
@@ -469,7 +726,7 @@ footer{border-top:1px solid var(--line);padding:24px 5vw 62px;display:flex;
       </div>
     </article>
     <article class="case reveal">
-      <div class="visual" data-video="irVNGjRFZGk"><div class="scene sc-2"><div class="shape sh-spin"></div></div>
+      <div class="visual" data-video="kTNH4LCsa2E"><div class="scene sc-2"><div class="shape sh-spin"></div></div>
         <div class="play"><div class="play-ring">PLAY</div></div></div>
       <div class="body">
         <span class="mono">Case Study 02 · Brand Motion System</span>
@@ -600,22 +857,6 @@ footer{border-top:1px solid var(--line);padding:24px 5vw 62px;display:flex;
   </div>
 </section>
 
-<!-- ================= TESTIMONIALS ================= -->
-<section id="testimonials">
-  <div class="eyebrow">KF 08 — Testimonials</div>
-  <div class="section-head"><h2 class="reveal">Kind words</h2></div>
-  <div class="quotes">
-    <div class="quote reveal">
-      <p>Testimonial text here — a sentence or two about working together and the result it produced.</p>
-      <div class="who"><b>Name</b> — Position, Company</div>
-    </div>
-    <div class="quote reveal">
-      <p>Testimonial text here — a sentence or two about working together and the result it produced.</p>
-      <div class="who"><b>Name</b> — Position, Company</div>
-    </div>
-  </div>
-</section>
-
 <!-- ================= RESUME ================= -->
 <section id="resume">
   <div class="resume-banner reveal">
@@ -738,6 +979,8 @@ filterBtns.forEach(btn => btn.addEventListener('click', () => {
     }
   });
   if (window.ScrollTrigger) ScrollTrigger.refresh();
+  workExpanded = false;
+  applyViewMore();
 }));
 
 /* ---------- GSAP animations ---------- */
@@ -831,6 +1074,47 @@ kfs.forEach(k => {
     document.getElementById(k.dataset.target)?.scrollIntoView({behavior: reduced ? 'auto' : 'smooth'});
   });
 });
+
+/* ---------- view more / view less ---------- */
+const INITIAL_VISIBLE = 6;
+const viewMoreBtn = document.getElementById('viewMoreBtn');
+const viewMoreWrap = document.getElementById('viewMoreWrap');
+let workExpanded = false;
+
+function applyViewMore(){
+  const visibleCards = Array.from(document.querySelectorAll('#workGrid .card'))
+    .filter(c => !c.classList.contains('hidden'));
+
+  if (visibleCards.length <= INITIAL_VISIBLE) {
+    visibleCards.forEach(c => c.classList.remove('extra-hidden'));
+    if (viewMoreWrap) viewMoreWrap.style.display = 'none';
+    workExpanded = false;
+    return;
+  }
+
+  if (viewMoreWrap) viewMoreWrap.style.display = 'flex';
+  visibleCards.forEach((c, i) => {
+    c.classList.toggle('extra-hidden', !workExpanded && i >= INITIAL_VISIBLE);
+  });
+  if (viewMoreBtn) viewMoreBtn.textContent = workExpanded ? 'View Less' : 'View More';
+}
+
+viewMoreBtn?.addEventListener('click', () => {
+  workExpanded = !workExpanded;
+  applyViewMore();
+  if (workExpanded && window.gsap && !reduced) {
+    document.querySelectorAll('#workGrid .card:not(.hidden):not(.extra-hidden)').forEach((c, i) => {
+      if (i >= INITIAL_VISIBLE) {
+        gsap.fromTo(c, {opacity:0, y:24}, {opacity:1, y:0, duration:.5, ease:'power3.out'});
+      }
+    });
+  }
+  if (!workExpanded) {
+    document.getElementById('work')?.scrollIntoView({behavior: reduced ? 'auto' : 'smooth', block: 'start'});
+  }
+});
+
+applyViewMore();
 </script>
 </body>
 </html>
